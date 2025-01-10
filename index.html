@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduling Algorithms</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Scheduling Algorithms</h1>
+    <form method="POST">
+        <label for="processes">Processes (name,arrival_time,burst_time,priority):</label><br>
+        <textarea name="processes" rows="5" cols="50"></textarea><br>
+        <label for="algorithm">Choose Algorithm:</label>
+        <select name="algorithm">
+            <option value="fcfs">First-Come, First-Served (FCFS)</option>
+            <option value="sjn">Shortest Job Next (SJN)</option>
+            <option value="priority">Priority Scheduling</option>
+            <option value="srt">Shortest Remaining Time (SRT)</option>
+            <option value="rr">Round Robin (RR)</option>
+            <option value="multilevel">Multiple-Level Queues</option>
+        </select><br>
+        <label for="quantum">Time Quantum (for RR and Multilevel):</label>
+        <input type="text" name="quantum"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
