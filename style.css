@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1507738978512-35798112892c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzfGVufDB8fDB8fHww");
+    background-size: cover;
+}
+
+h1 {
+   
+    text-align: center;
+    font-weight: 200px;
+    color: rgba(0, 0, 0, 0.9);
+    
+ 
+    margin-top: 40px;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.9);
+    
+    
+}
+
+textarea, input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e8491d;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
