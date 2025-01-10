@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduling Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Scheduling Results - {{ algorithm }}</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th>Priority</th>
+            <th>Completion Time</th>
+            <th>Turnaround Time</th>
+            <th>Waiting Time</th>
+        </tr>
+        {% for process in processes %}
+        <tr>
+            <td>{{ process.name }}</td>
+            <td>{{ process.arrival_time }}</td>
+            <td>{{ process.burst_time }}</td>
+            <td>{{ process.priority }}</td>
+            <td>{{ process.completion_time }}</td>
+            <td>{{ process.turnaround_time }}</td>
+            <td>{{ process.waiting_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back</a>
+</body>
+</html>
+
+
